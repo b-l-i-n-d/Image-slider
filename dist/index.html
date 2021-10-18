@@ -8,36 +8,132 @@
 
         <link rel="stylesheet" href="./css/tailwind.css" />
     </head>
-    <body>
-        <div class="slideshow-container max-w-4xl relative mx-auto">
+    <body class="bg-purple-600">
+        <div
+            class="
+                slideshow-container
+                max-w-4xl
+                relative
+                mx-auto
+                rounded-3xl
+                pt-16
+                transition-all
+                duration-300
+            "
+        >
             <div class="mySlides fade">
-                <div class="numbertext">1 / 5</div>
-                <img src="./assets/1.jpg" />
-                <div class="text">Caption 1</div>
+                <div class="numbertext absolute text-white px-3 py-2 top-20">
+                    1 / 5
+                </div>
+                <img class="rounded-3xl shadow-2xl" src="./assets/1.jpg" />
+                <div
+                    class="
+                        text
+                        absolute
+                        text-xl
+                        font-bold
+                        text-center
+                        w-full
+                        px-3
+                        py-2
+                        bottom-2
+                        text-white
+                    "
+                >
+                    Caption 1
+                </div>
             </div>
 
             <div class="mySlides fade">
-                <div class="numbertext">2 / 5</div>
-                <img src="./assets/2.jpg" />
-                <div class="text">Caption Two</div>
+                <div class="numbertext absolute text-white px-3 py-2 top-20">
+                    2 / 5
+                </div>
+                <img class="rounded-3xl shadow-2xl" src="./assets/2.jpg" />
+                <div
+                    class="
+                        text
+                        absolute
+                        text-xl
+                        font-bold
+                        text-center
+                        w-full
+                        px-3
+                        py-2
+                        bottom-2
+                        text-white
+                    "
+                >
+                    Caption Two
+                </div>
             </div>
 
             <div class="mySlides fade">
-                <div class="numbertext">3 / 5</div>
-                <img src="./assets/3.jpg" />
-                <div class="text">Caption Three</div>
+                <div class="numbertext absolute text-white px-3 py-2 top-20">
+                    3 / 5
+                </div>
+                <img class="rounded-3xl shadow-2xl" src="./assets/3.jpg" />
+                <div
+                    class="
+                        text
+                        absolute
+                        text-xl
+                        font-bold
+                        text-center
+                        w-full
+                        px-3
+                        py-2
+                        bottom-2
+                        text-white
+                    "
+                >
+                    Caption Three
+                </div>
             </div>
 
             <div class="mySlides fade">
-                <div class="numbertext">4 / 5</div>
-                <img src="./assets/4.jpg" />
-                <div class="text">Caption 4</div>
+                <div class="numbertext absolute text-white px-3 py-2 top-20">
+                    4 / 5
+                </div>
+                <img class="rounded-3xl shadow-2xl" src="./assets/4.jpg" />
+                <div
+                    class="
+                        text
+                        absolute
+                        text-xl
+                        font-bold
+                        text-center
+                        w-full
+                        px-3
+                        py-2
+                        bottom-2
+                        text-white
+                    "
+                >
+                    Caption 4
+                </div>
             </div>
 
             <div class="mySlides fade">
-                <div class="numbertext">5 / 5</div>
-                <img src="./assets/5.jpg" />
-                <div class="text">Caption 5</div>
+                <div class="numbertext absolute text-white px-3 py-2 top-20">
+                    5 / 5
+                </div>
+                <img class="rounded-3xl shadow-2xl" src="./assets/5.jpg" />
+                <div
+                    class="
+                        text
+                        absolute
+                        text-xl
+                        font-bold
+                        text-center
+                        w-full
+                        px-3
+                        py-2
+                        bottom-2
+                        text-white
+                    "
+                >
+                    Caption 5
+                </div>
             </div>
 
             <a
@@ -48,10 +144,11 @@
                     top-1/2
                     w-auto
                     text-white
+                    pl-2
                     select-none
                 "
                 onclick="plusSlides(-1)"
-                ><i class="fas fa-chevron-circle-left"></i
+                ><i class="fas fa-chevron-circle-left fa-2x"></i
             ></a>
             <a
                 class="
@@ -65,19 +162,90 @@
                     transition-all
                     duration-300
                     right-0
+                    pr-2
                 "
                 onclick="plusSlides(1)"
-                ><i class="fas fa-chevron-circle-right"></i
+                ><i class="fas fa-chevron-circle-right fa-2x"></i
             ></a>
         </div>
         <br />
 
         <div class="text-center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
-            <span class="dot" onclick="currentSlide(5)"></span>
+            <span
+                class="
+                    dot
+                    cursor-pointer
+                    h-4
+                    w-4
+                    mx-2
+                    bg-white
+                    rounded-full
+                    inline-block
+                    transition-colors
+                    duration-300
+                "
+                onclick="currentSlide(1)"
+            ></span>
+            <span
+                class="
+                    dot
+                    cursor-pointer
+                    h-4
+                    w-4
+                    mx-2
+                    bg-white
+                    rounded-full
+                    inline-block
+                    transition-colors
+                    duration-300
+                "
+                onclick="currentSlide(2)"
+            ></span>
+            <span
+                class="
+                    dot
+                    cursor-pointer
+                    h-4
+                    w-4
+                    mx-2
+                    bg-white
+                    rounded-full
+                    inline-block
+                    transition-colors
+                    duration-300
+                "
+                onclick="currentSlide(3)"
+            ></span>
+            <span
+                class="
+                    dot
+                    cursor-pointer
+                    h-4
+                    w-4
+                    mx-2
+                    bg-white
+                    rounded-full
+                    inline-block
+                    transition-colors
+                    duration-300
+                "
+                onclick="currentSlide(4)"
+            ></span>
+            <span
+                class="
+                    dot
+                    cursor-pointer
+                    h-4
+                    w-4
+                    mx-2
+                    bg-white
+                    rounded-full
+                    inline-block
+                    transition-colors
+                    duration-300
+                "
+                onclick="currentSlide(5)"
+            ></span>
         </div>
 
         <script
